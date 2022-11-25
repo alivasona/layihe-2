@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.to_do_list {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.box_top {
+    overflow: hidden;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    margin-top: -1px;
+}
+
+.box_top_bg {
+    height: 28px;
+    width: 100%;
+    background-color: rgb(229, 89, 177);
+}
+ 
+.box_top h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: pink;
+}
+
+.box_main {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.text {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+body {
+    background-image: url(/assets/images/3428551675f275e28461a3a918c97c61.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button {
+    padding-top: 22px;
+    padding-bottom: 19px;
+}
+
+button {
+    width: 150px;
+    background-color: rgb(229, 89, 177);
+    border: 1px solid purple;
+    color: pink;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.filter_icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    filter: #000;
+}
+
+.filter_img {
+    cursor: pointer;
+}
+
+.filter_img rect,
+.filter_img path {
+    transition: all 0.3s;
+}
+
+.filter_img:hover rect,
+.filter_img:hover path {
+    fill: rgb(229, 89, 177);
+}
+
+.close_icon {
+    cursor: pointer;
+}
+
+.close_icon rect,
+.close_icon path {
+    transition: all 0.3ms;
+}
+
+.close_icon:hover rect,
+.close_icon:hover path {
+    fill: rgb(229, 89, 177);
+}
+
+.button button {
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: rgb(229, 89, 177);
+    width: 250px;
+    color: #fff;
+}
+
+.box_main_content {
+    border: 1px solid purple;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box_main_content_item {
+    position: relative;
+}
+
+.close_icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+input {
+    padding-left: 5px;
+    outline: none;
+}
+
+
+.todo_list_item{
+    display: flex;
+    justify-content: space-between ;
+    padding: 5px 10px;
+}
+.todo_list_item img{
+    cursor: pointer;
+}
